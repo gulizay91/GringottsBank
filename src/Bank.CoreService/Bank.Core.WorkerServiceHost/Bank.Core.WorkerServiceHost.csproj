@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-Bank.Core.WorkerServiceHost-40856A83-F3BD-4D3B-980F-BE46751F6B4E</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="6.0.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+		<PackageReference Include="NServiceBus" Version="7.6.0" />
+		<PackageReference Include="NServiceBus.Callbacks" Version="3.0.0" />
+		<PackageReference Include="NServiceBus.Extensions.Hosting" Version="1.1.0" />
+		<PackageReference Include="NServiceBus.RabbitMQ" Version="6.1.1" />
+		<PackageReference Include="NServiceBus.Serilog" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Bank.Core.Infrastructure\Bank.Core.Infrastructure.csproj" />
+	  <ProjectReference Include="..\Bank.Core\Bank.Core.csproj" />
+	</ItemGroup>
+
+</Project>

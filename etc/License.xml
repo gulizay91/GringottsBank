@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license type="Non-Production Development" Applications="All" expiration="2022-05-05" id="59800bb5-db66-4b75-a2a3-2b204276f75b">
+  <name>gulizay91@gmail.com</name>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>XJjjTS5/dL8hf2s2dY5Y7tU5f4Q=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>fsrHLiZInpBN9fMuVLVasPNSJyzhAHL5bnmrDGFBESxvyWYRbX5AdLQ77QMG2RawZC6RLNI2/gcG89fs8vssNL9SnameO6EAGtZwrXkUCmtAz/UFc0FUorywaW5qVeiqI5bY1JT4OGJbTJWyQzUeaa5LLkj1GfzPmTUEhchAs1c=</SignatureValue>
+  </Signature>
+</license>
