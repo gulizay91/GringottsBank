@@ -55,7 +55,7 @@ namespace Bank.Core.Services
                     newBalance += request.Amount;
                 else
                     newBalance -= request.Amount;
-                throw new UoFUpdateConcurrencyException(); // todo delete
+                
                 account.UpdateBalance(newBalance);
                 var result = _unitOfWork.AccountRepository.Update(account);
                 _unitOfWork.SaveChanges();

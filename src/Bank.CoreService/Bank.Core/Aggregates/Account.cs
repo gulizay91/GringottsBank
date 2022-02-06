@@ -26,7 +26,7 @@ namespace Bank.Core.Aggregates
         public Guid CustomerId { get; private set; }
         public string IBAN { get; private set; } 
         public string Name { get; private set; }
-        public CurrencyType Currency { get; private set; } // todo: enum galleon, try usd eur...
+        public CurrencyType Currency { get; private set; }
         public decimal Balance { get; private set; }
         public AuditInfo AuditInfo { get; private set; }
 

@@ -64,7 +64,7 @@ namespace Bank.Core.Infrastructure.Repositories
             {
                 return _dbContext.SaveChanges();
             }
-            catch (DbUpdateConcurrencyException)//todo
+            catch (DbUpdateConcurrencyException)
             {
                 throw new UoFUpdateConcurrencyException();
             }

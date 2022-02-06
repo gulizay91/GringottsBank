@@ -26,9 +26,11 @@ namespace Bank.Core.Handlers
                 // todo: event for transaction
                 _logger?.LogInformation($"Account created fail: {message.CustomerId} - raising transaction for fail event");
             }
-
-            // todo: event for transaction
-            _logger?.LogInformation($"Account created for customer: {message.CustomerId} - raising transaction event");
+            else
+            {
+                // todo: event for transaction
+                _logger?.LogInformation($"Account created for customer: {message.CustomerId} - raising transaction event");
+            }
         }
 
         public async Task Handle(UpdateAccountBalance message, IMessageHandlerContext context)
@@ -39,9 +41,11 @@ namespace Bank.Core.Handlers
                 // todo: event for transaction
                 _logger?.LogInformation($"Account balance updated fail: {message.AccountId} - raising transaction for fail event");
             }
-            
-            // todo: event for transaction
-            _logger?.LogInformation($"Account balance updated : {message.AccountId} - raising transaction event");
+            else
+            {
+                // todo: event for transaction
+                _logger?.LogInformation($"Account balance updated : {message.AccountId} - raising transaction event");
+            }
         }
     }
 }

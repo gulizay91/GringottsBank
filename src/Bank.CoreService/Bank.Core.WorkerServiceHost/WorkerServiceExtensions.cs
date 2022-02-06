@@ -24,13 +24,11 @@ namespace Bank.Core.WorkerServiceHost
             builder.ConfigureLogging((ctx, logging) =>
             {
                 logging.AddConfiguration(ctx.Configuration.GetSection("Logging"));
-                //logging.AddEventLog();
                 logging.AddConsole();
 
-                Console.WriteLine($"environment ASPNETCORE_ENVIRONMENT: {Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}");
-                Console.WriteLine($"config NSBTransportHost: {ctx.Configuration.GetValue<string>("NSBTransportHost")}");
-                Console.WriteLine($"config MssqlConnectionString: {ctx.Configuration.GetValue<string>("MssqlConnectionString")}");
-
+                //Console.WriteLine($"environment ASPNETCORE_ENVIRONMENT: {Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}");
+                //Console.WriteLine($"config NSBTransportHost: {ctx.Configuration.GetValue<string>("NSBTransportHost")}");
+                //Console.WriteLine($"config MssqlConnectionString: {ctx.Configuration.GetValue<string>("MssqlConnectionString")}");
             });
             builder.ConfigureServices((ctx, services) =>
             {

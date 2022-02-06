@@ -33,20 +33,30 @@ Data concurrency is important when update account balance on db. so handled with
 if you are using VS, you can run with docker
 if you're not, open a terminal in your root directory which is 'GringottsBank/src' and run the following commands:
 	
-```sh
+```cmd
 cd src
 docker-compose build
 docker-compose up
 ```
 
 if you want to change ports on docker-compose.yaml
-```sh
+```cmd
 docker-compose down
 docker-compose build
 docker-compose up
 ```
 Once done, run the Docker image and map the port to whatever you wish on
 your host.
+
+You can check data on sql management studio
+
+```sh
+Server Name: localhost,1445
+Sql Server Authentication
+    Login: sa
+    Password: p@ssw0rd
+```
+
 
 ### 
 
@@ -77,7 +87,7 @@ Update-database Initial -StartupProject src\Bank.API
 | ------ | ------ | ------ |
 | 10. Validations - Please be sure your system is error-proof. | done | fluentvalidation and Guards
 | 11. Responses - Please define success and error response models and use them | done | swagger options
-| 12. Authentication - Please secure endpoints (for ex. bearer token) | none | i didnt implemente
+| 12. Authentication - Please secure endpoints (for ex. bearer token) | none | i didnt implement
 
 
 ## License

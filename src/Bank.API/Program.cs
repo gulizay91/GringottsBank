@@ -15,15 +15,10 @@ builder.Configuration
 // Add services to the container.
 
 builder.Services.AddControllers()
-    //.AddControllers(options =>
-    //{
-    //    options.Conventions.Add(new RouteTokenTransformerConvention(new SlugifyParameterTransformer()));
-    //})
     .AddJsonOptions(opt =>
     {
         opt.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
-    //.AddNewtonsoftJson(); // todo: for http patch
 builder.Services
     .AddFluentValidation(options =>
     {
@@ -55,9 +50,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
     app.UseHttpsRedirection();
 
-    Console.WriteLine($"environment ASPNETCORE_ENVIRONMENT: {Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}");
-    Console.WriteLine($"config NSBTransportHost: {builder.Configuration.GetValue<string>("NSBTransportHost")}");
-    Console.WriteLine($"config MssqlConnectionString: {builder.Configuration.GetValue<string>("MssqlConnectionString")}");
+    //Console.WriteLine($"environment ASPNETCORE_ENVIRONMENT: {Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}");
+    //Console.WriteLine($"config NSBTransportHost: {builder.Configuration.GetValue<string>("NSBTransportHost")}");
+    //Console.WriteLine($"config MssqlConnectionString: {builder.Configuration.GetValue<string>("MssqlConnectionString")}");
 }
 
 
